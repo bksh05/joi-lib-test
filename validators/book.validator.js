@@ -2,7 +2,7 @@ const Joi = require("joi");
 
 const book = Joi.object({
   bookName: Joi.string().required(),
-  totalPage: Joi.number().required(),
+  totalPage: Joi.number().min(1).required().strict(),
   author: Joi.string().required(),
   genre: Joi.array().items(Joi.string()).required(),
   reviews: Joi.array()
