@@ -1,5 +1,3 @@
-// TODO: Mail to vigneshrajann@ninjacart.com
-
 const express = require("express");
 const validator = require("./middlewares/validator.middleware");
 
